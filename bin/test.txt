@@ -1,0 +1,78 @@
+.init section layout
+  Starting        Virtual
+  address  Size   address
+  -----------------------
+
+
+extab section layout
+  Starting        Virtual
+  address  Size   address
+  -----------------------
+
+
+extabindex section layout
+  Starting        Virtual
+  address  Size   address
+  -----------------------
+
+
+.text section layout
+  Starting        Virtual
+  address  Size   address
+  -----------------------
+
+
+.ctors section layout
+  Starting        Virtual
+  address  Size   address
+  -----------------------
+
+
+.dtors section layout
+  Starting        Virtual
+  address  Size   address
+  -----------------------
+
+
+.rodata section layout
+  Starting        Virtual
+  address  Size   address
+  -----------------------
+
+
+.data section layout
+  Starting        Virtual
+  address  Size   address
+  -----------------------
+
+
+.bss section layout
+  Starting        Virtual
+  address  Size   address
+  -----------------------
+
+
+.sdata section layout
+  Starting        Virtual
+  address  Size   address
+  -----------------------
+
+
+.sbss section layout
+  Starting        Virtual
+  address  Size   address
+  -----------------------
+
+
+.sdata2 section layout
+  Starting        Virtual
+  address  Size   address
+  -----------------------
+
+
+.sbss2 section layout
+  Starting        Virtual
+  address  Size   address
+  -----------------------
+
+

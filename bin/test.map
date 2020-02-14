@@ -1,0 +1,47 @@
+  00000000 000258 80003100  1 .init 	os.a __start.c
+  00000000 0000f0 80003100  4 __start 	os.a __start.c
+  000000f0 00001c 800031f0  4 __init_registers 	os.a __start.c
+  0000010c 0000c0 8000320c  4 __init_data 	os.a __start.c
+  000001cc 000054 800032cc  1 .init 	os.a __ppc_eabi_init.cpp
+  000001cc 000020 800032cc  4 __init_hardware 	os.a __ppc_eabi_init.cpp
+  000001ec 000034 800032ec  4 __flush_cache 	os.a __ppc_eabi_init.cpp
+  00000220 000144 80003320  1 .init 	Runtime.PPCEABI.H.a __mem.c
+  00000220 000030 80003320  4 memset 	Runtime.PPCEABI.H.a __mem.c
+  00000250 0000c4 80003350  4 __fill_mem 	Runtime.PPCEABI.H.a __mem.c
+  00000314 000050 80003414  4 memcpy 	Runtime.PPCEABI.H.a __mem.c
+  00000364 0000a4 80003464  1 .init 	TRK_MINNOW_DOLPHIN.a mem_TRK.c
+  00000364 000024 80003464  4 TRK_memcpy 	TRK_MINNOW_DOLPHIN.a mem_TRK.c
+  UNUSED   000050 ........ TRK_memmove TRK_MINNOW_DOLPHIN.a mem_TRK.c
+  00000388 000030 80003488  4 TRK_memset 	TRK_MINNOW_DOLPHIN.a mem_TRK.c
+  000003b8 001f34 800034b8  1 .init 	TRK_MINNOW_DOLPHIN.a __exception.s
+  000003b8 000000 800034b8 gTRKInterruptVectorTable (entry of .init) 	TRK_MINNOW_DOLPHIN.a __exception.s
+  000022ec 000000 800053ec gTRKInterruptVectorTableEnd (entry of .init) 	TRK_MINNOW_DOLPHIN.a __exception.s
+  000022ec 000020 800053ec  1 .init 	TRK_MINNOW_DOLPHIN.a dolphin_trk.c
+  000022ec 000020 800053ec  4 __TRK_reset 	TRK_MINNOW_DOLPHIN.a dolphin_trk.c
+  
+.init section layout
+  Starting        Virtual
+  address  Size   address
+  -----------------------
+  00000000 000258 80003100  1 .init 	os.a __start.c
+  00000000 0000f0 80003100  4 __start 	os.a __start.c
+  UNUSED   00005c ........ __copy_rom_section os.a __start.c
+  UNUSED   000030 ........ __init_bss_section os.a __start.c
+  000000f0 00001c 800031f0  4 __init_registers 	os.a __start.c
+  0000010c 0000c0 8000320c  4 __init_data 	os.a __start.c
+  000001cc 000054 800032cc  1 .init 	os.a __ppc_eabi_init.cpp
+  000001cc 000020 800032cc  4 __init_hardware 	os.a __ppc_eabi_init.cpp
+  000001ec 000034 800032ec  4 __flush_cache 	os.a __ppc_eabi_init.cpp
+  00000220 000144 80003320  1 .init 	Runtime.PPCEABI.H.a __mem.c
+  00000220 000030 80003320  4 memset 	Runtime.PPCEABI.H.a __mem.c
+  00000250 0000c4 80003350  4 __fill_mem 	Runtime.PPCEABI.H.a __mem.c
+  00000314 000050 80003414  4 memcpy 	Runtime.PPCEABI.H.a __mem.c
+  00000364 0000a4 80003464  1 .init 	TRK_MINNOW_DOLPHIN.a mem_TRK.c
+  00000364 000024 80003464  4 TRK_memcpy 	TRK_MINNOW_DOLPHIN.a mem_TRK.c
+  UNUSED   000050 ........ TRK_memmove TRK_MINNOW_DOLPHIN.a mem_TRK.c
+  00000388 000030 80003488  4 TRK_memset 	TRK_MINNOW_DOLPHIN.a mem_TRK.c
+  000003b8 001f34 800034b8  1 .init 	TRK_MINNOW_DOLPHIN.a __exception.s
+  000003b8 000000 800034b8 gTRKInterruptVectorTable (entry of .init) 	TRK_MINNOW_DOLPHIN.a __exception.s
+  000022ec 000000 800053ec gTRKInterruptVectorTableEnd (entry of .init) 	TRK_MINNOW_DOLPHIN.a __exception.s
+  000022ec 000020 800053ec  1 .init 	TRK_MINNOW_DOLPHIN.a dolphin_trk.c
+  000022ec 000020 800053ec  4 __TRK_reset 	TRK_MINNOW_DOLPHIN.a dolphin_trk.c

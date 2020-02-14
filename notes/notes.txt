@@ -1,0 +1,47 @@
+to be an "Entry" of a symbol
+ - inherit the starting/virtual address of parent symbol
+ - know offset from start of parent symbol
+ - Have reported size of 0 bytes.
+ note: Parent Symbol *can be* a "Closure" Symbol.  When searching, it is the nearest symbol with a matching name upstream.
+
+
+When re-evaluating symbol sizes
+ - ignore "Entry" and "Closure" symbols.  Continue to search upstream.
+
+
+
+
+.init
+extab
+extabindex
+.text
+.ctors
+.dtors
+.rodata
+.data
+.bss
+.sdata
+.sbss
+.sdata2
+.sbss2
+extabindex
+
+
+
+"Entry" Symbols
+  do appear in
+    .init
+    .text
+    .rodata
+    .data
+    .bss
+    
+  do not appear in
+    extab
+    .ctors
+    .dtors
+    .sdata
+    .sbss
+    .sdata2
+    .sbss2
+    extabindex
